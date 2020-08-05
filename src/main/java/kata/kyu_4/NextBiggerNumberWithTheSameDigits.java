@@ -4,11 +4,6 @@ import java.util.Arrays;
 
 public class NextBiggerNumberWithTheSameDigits {
 
-    public static void main(String[] args) {
-        long a = 10990;
-
-        System.out.println(nextBiggerNumber(a));
-    }
     public static long nextBiggerNumber(long n)
     {
         char [] array = String.valueOf(n).toCharArray();
