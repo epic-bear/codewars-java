@@ -16,8 +16,7 @@ public class NextBiggerNumberWithTheSameDigits {
                array[i] = array[x];
                array[x] = a;
                Arrays.sort(array,i+1,array.length);
-               result = Long.parseLong(String.copyValueOf(array));
-               break;
+               return Long.parseLong(String.copyValueOf(array));
            }
             }
 
