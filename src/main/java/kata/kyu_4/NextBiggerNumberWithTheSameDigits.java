@@ -28,8 +28,8 @@ public class NextBiggerNumberWithTheSameDigits {
         int min = 0;
         for (int j = chars.length-1; j > i ; j--) {
             if(chars[j]>chars[i]){
-                min = j;
-                break;
+
+                return j;
             }
         }
         return min;
