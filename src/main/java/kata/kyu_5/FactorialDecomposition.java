@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FactorialDecomposition {
-
+    
     public static String decomp(int n) {
 
         List<String> result = new ArrayList<>();
