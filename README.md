@@ -1,3 +1,5 @@
 Solutions to codewars katas on Java
 
-www.codewars.com/dashboard
+[CodeWars](www.codewars.com/dashboard)
+
+[MyProfile](https://www.codewars.com/users/EpicBear)
