@@ -10,7 +10,7 @@ public class DisagreeableAscii {
 
     public static int getWeight(String name) {
         return Arrays.stream(name.split("")).filter(x -> Character.isLetter(x.charAt(0)))
-                .mapToInt(x -> Character.isUpperCase(x.charAt(0)) ? (int) x.toLowerCase().charAt(0) : x.toUpperCase()
+                .mapToInt(x -> Character.isUpperCase(x.charAt(0)) ? x.toLowerCase().charAt(0) : x.toUpperCase()
                         .charAt(0)).sum();
     }
 }
