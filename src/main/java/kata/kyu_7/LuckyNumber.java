@@ -1,6 +1,5 @@
 package kata.kyu_7;
 
-import java.util.Arrays;
 
 public class LuckyNumber {
 
@@ -9,7 +8,6 @@ public class LuckyNumber {
     }
 
     public static boolean isLucky(long n) {
-        int count = Arrays.stream(String.valueOf(n).split("")).mapToInt(Integer::valueOf).sum();
-        return count % 9 == 0;
+        return n % 9 == 0;
     }
 }
