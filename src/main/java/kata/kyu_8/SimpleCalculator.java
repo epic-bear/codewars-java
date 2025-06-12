@@ -5,6 +5,7 @@ public class SimpleCalculator {
         System.out.printf(String.valueOf(calculate(1, 2, "f")));
     }
 
+
     public static double calculate(double a, double b, String op) {
         return switch (op) {
             case "+" -> a + b;
