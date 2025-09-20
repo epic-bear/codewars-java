@@ -2,6 +2,7 @@ package kata.kyu_7;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CircularList<T> {
 
@@ -12,7 +13,7 @@ public class CircularList<T> {
         if (elements == null || elements.length == 0) {
             throw new RuntimeException();
         }
-        elementsList = Arrays.stream(elements).toList();
+        elementsList = Arrays.stream(elements).collect(Collectors.toList());
     }
 
     T next() {

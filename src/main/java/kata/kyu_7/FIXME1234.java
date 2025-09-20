@@ -6,10 +6,10 @@ import java.util.Map;
 public class FIXME1234 {
 
     public static void main(String[] args) {
-        System.out.println(Dinglemouse.getNumber("one"));
+        System.out.println(Dinglemouse.getNumber());
     }
 
-    public class Dinglemouse {
+    public static class Dinglemouse {
 
         static final Map<String, MyNumber> cache = new HashMap<>();
 
@@ -37,8 +37,8 @@ public class FIXME1234 {
 
         }
 
-        static MyNumber getNumber(final String name) {
-            return cache.get(name);
+        static MyNumber getNumber() {
+            return cache.get("one");
         }
     }
 }

@@ -1,6 +1,7 @@
 package kata.kyu_7;
 
 import java.util.Comparator;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class StrangeMathematics {
@@ -15,7 +16,7 @@ public class StrangeMathematics {
                 .sorted(Comparator.naturalOrder())
                 .mapToInt(Integer::valueOf)
                 .boxed()
-                .toList()
+                .collect(Collectors.toList())
                 .indexOf(k);
     }
 }
